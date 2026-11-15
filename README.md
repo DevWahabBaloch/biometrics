@@ -1,16 +1,29 @@
-# biometrics
+# Biometric Authentication
 
-A new Flutter project.
+Fingerprint and Face ID authentication in Flutter with local_auth and BLoC/Cubit.
 
-## Getting Started
+## Overview
 
-This project is a starting point for a Flutter application.
+Device-level biometric authentication (fingerprint and Face ID), with the availability check and the authentication result handled by separate Cubits.
 
-A few resources to get you started if this is your first Flutter project:
+## Features
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- Checks whether biometrics can be used on the device
+- Authenticates with `local_auth`
+- Separate Cubits and states for availability and authentication
+- Cubits provided through `MultiBlocProvider`
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Tech stack
+
+Flutter · Dart · local_auth · flutter_bloc
+
+## Getting started
+
+```bash
+flutter pub get
+flutter run
+```
+
+---
+
+Built by [Abdul Wahab](https://github.com/DevWahabBaloch), Senior Flutter Developer · [Portfolio](https://devwahabbaloch.web.app/)
